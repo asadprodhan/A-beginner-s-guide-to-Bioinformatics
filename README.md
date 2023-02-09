@@ -21,27 +21,50 @@ Simply put, Conda is a tool that quickly installs, updates, and manages software
 
 ### **Do I have ‘conda’ in my computer?**
 
-Run conda in the terminal. If you already have conda, you will see instructions on how to use conda. If you don’t have it installed, you get an error saying ‘conda command not found’
+Run *conda* in the terminal. If you already have conda, you will see instructions on how to use conda. If you don’t have it installed, you get an error saying ‘conda command not found’
 
 
 ### **How to install ‘conda’ in my computer?**
 
 - visit the anaconda archive to find the latest installer of Anaconda (https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh) 
-•	download using 'wget' (wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh)
-•	make the downloaded installer executable (chmod +x Anaconda3-2020.02-Linux-x86_64.sh)
-•	run it (./Anaconda3-2020.02-Linux-x86_64.sh)
-•	this will install Anaconda3 in the home directory
-•	add conda to your PATH
+- download using 'wget' 
+
+
+  ```
+  wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+  ```
+  
+  
+- make the downloaded installer executable
+
+
+  ```
+  chmod +x Anaconda3-2020.02-Linux-x86_64.sh
+  ```
+  
+  
+- run it
+  ```
+  ./Anaconda3-2020.02-Linux-x86_64.sh
+  ```
+  
+  
+- this will install Anaconda3 in the home directory
+
+
+- add conda to your PATH
 
 
 ### **What is PATH?**
 
+
 See https://github.com/asadprodhan/About-the-PATH 
+
 
 
 ### **How do I install softwares using ‘conda’?**
 
-•	create a conda environment as follows 
+- create a conda environment as follows 
 
 
 ```
@@ -51,7 +74,7 @@ conda create -n bioinf
 -n flag is to assign a name to the environment
 
 
-•	activate your conda environment
+- activate your conda environment
 
 
 ```
@@ -59,26 +82,46 @@ conda activate bioinf
 ```
 
 
-•	check that your conda environment has been activated. Two ways to check:
+- check that your conda environment has been activated. Two ways to check:
 
-  o	run the following command and the currently activated environment is indicated by an asterisk 
-  
-  
-  ```
-  conda env list
-  ```
-  
-  
-  o	the currently activated environment is also indicated on the left-hand side of your prompt name (i.e., user name)
-  
-  
-•	now install the softwares in your environment as follows
 
-o	conda install -c bioconda samtools # ‘c’ stands for Chanell 
-o	conda will automatically install all dependent softwares for ‘samtools’ for example
-o	conda install -c bioconda trimmomatic
-o	conda install -c bioconda bedtools
-o	conda install -c bioconda blast 
+  - run the following command and the currently activated environment is indicated by an asterisk 
+  
+  
+    ```
+    conda env list
+    ```
+  
+  
+  - the currently activated environment is also indicated on the left-hand side of your prompt name (i.e., user name)
+  
+  
+- now install the softwares in your environment as follows
+
+
+```
+conda install -c bioconda samtools
+```
+
+> ‘c’ stands for Chanell 
+> conda will automatically install all dependent softwares for ‘samtools’ for example
+
+
+```
+conda install -c bioconda trimmomatic
+```
+
+
+```
+conda install -c bioconda bedtools
+```
+
+
+```
+conda install -c bioconda blast 
+```
+
+
 
 How do I find the installation command for a bioinformatics software?
 Google conda install <name of the software>, you will find something like below:
