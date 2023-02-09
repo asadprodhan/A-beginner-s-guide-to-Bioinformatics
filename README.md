@@ -26,7 +26,7 @@ Run conda in the terminal. If you already have conda, you will see instructions 
 
 ### **How to install ‘conda’ in my computer?**
 
-•	visit the anaconda archive to find the latest installer of Anaconda (https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh) 
+- visit the anaconda archive to find the latest installer of Anaconda (https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh) 
 •	download using 'wget' (wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh)
 •	make the downloaded installer executable (chmod +x Anaconda3-2020.02-Linux-x86_64.sh)
 •	run it (./Anaconda3-2020.02-Linux-x86_64.sh)
