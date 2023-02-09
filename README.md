@@ -133,11 +133,28 @@ Google conda install <name of the software>, you will find something like below:
 ### **Has my software installation been successful?**  
   
 
-Run ‘bedtools’ to see if ‘bedtools’ has successfully been installed
-How do I share my ‘conda environment’?
-conda env export > environment.yml # for sharing or publications
-How do I run a ‘conda environment’ that my colleague shared with me?
-conda env create -f my_environment.yml # creating an env using someone’s shared env
+Run *bedtools* in the terminal to see if ‘bedtools’ has successfully been installed
+  
+  
+### **How do I share my ‘conda environment’?**  
+  
+  
+```
+conda env export > environment.yml
+```
+  
+  
+Conda environment might be asked by the manuscript reviewers
+  
+
+### **How do I run a ‘conda environment’ that my colleague shared with me?**   
+  
+
+```
+conda env create -f my_environment.yml 
+```
+
+The above command will create a conda environment using someone’s shared environment called *my_environment.yml*
 
 
 
