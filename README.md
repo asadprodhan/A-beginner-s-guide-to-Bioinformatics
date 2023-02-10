@@ -178,12 +178,15 @@ You can use the BLASTn tool. BLAST stands for Basic Local Alignment Search Tool.
 *AtNRT1.1* gene sequence in fasta format can be collected as follows:
   
   
-  
-  
-  
-  
-  
-  
+<p align="center">
+  <img 
+    src="https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/blob/main/AtNRT1.1_download.PNG"
+  >
+</p>
+<p align = "center">
+Figure 2. Downloading *AtNRT1.1* gene sequence from the NCBI database.
+</p>
+
 
 Rice genome sequence in fasta format can be collected as follows:
   
