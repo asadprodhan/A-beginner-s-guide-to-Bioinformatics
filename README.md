@@ -157,14 +157,21 @@ conda env create -f my_environment.yml
 The above command will create a conda environment using someone’s shared environment called *my_environment.yml*
 
 
+## **Let’s carry out a simple bioinformatics task**
 
-
-
-Let’s carry out a simple bioinformatics task
-Say you have a DNA sequence. For example, AtNRT1.1 (an Arabidopsis gene). You want to find out its matches in Rice and extract the matched sequences. How do you do that?
-You can use the BLASTn tool. BLAST stands for Basic Local Alignment Search Tool. It will find the closest match of AtNRT1.1 gene in rice. Once the closest matches are identified, their sequences can be extracted from the rice genome.
-Let’s run this task.
-Step 1: Collect the sequences of the AtNRT1.1 gene and rice genome from the NCBI database.
+  
+Say you have a DNA sequence. For example, *AtNRT1.1* (an *Arabidopsis* *thaliana* gene). You want to find out its matches in Rice (*Oryza* *sativa*) and extract the matched sequences. How do you do that?
+  
+  
+You can use the BLASTn tool. BLAST stands for Basic Local Alignment Search Tool. It will find the closest match of *AtNRT1.1* gene in rice. Once the closest matches are identified, their sequences can be extracted from the rice genome.
+  
+  
+**Let’s run this task.**
+  
+  
+**Step 1: Collect the sequences of the AtNRT1.1 gene and rice genome from the NCBI database.**
+  
+  
 AtNRT1.1 gene sequence in fasta format can be collected as follows:
 
 Rice genome sequence in fasta format can be collected as follows:
