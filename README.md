@@ -160,7 +160,10 @@ The above command will create a conda environment using someone’s shared envir
 ## **Let’s carry out a simple bioinformatics task**
 
   
-Say you have a DNA sequence. For example, *AtNRT1.1* (an *Arabidopsis* *thaliana* gene). You want to find out its matches in Rice (*Oryza* *sativa*) and extract the matched sequences. How do you do that?
+Say you have a DNA sequence. For example, *AtNRT1.1* (an *Arabidopsis* *thaliana* gene). You want to find out its matches in Rice (*Oryza* *sativa*) and extract the matched sequences. 
+  
+
+**How do you do that?**
   
   
 You can use the BLASTn tool. BLAST stands for Basic Local Alignment Search Tool. It will find the closest match of *AtNRT1.1* gene in rice. Once the closest matches are identified, their sequences can be extracted from the rice genome.
@@ -172,18 +175,52 @@ You can use the BLASTn tool. BLAST stands for Basic Local Alignment Search Tool.
 **Step 1: Collect the sequences of the AtNRT1.1 gene and rice genome from the NCBI database.**
   
   
-AtNRT1.1 gene sequence in fasta format can be collected as follows:
+*AtNRT1.1* gene sequence in fasta format can be collected as follows:
+  
+  
+  
+  
+  
+  
+  
+  
 
 Rice genome sequence in fasta format can be collected as follows:
+  
+  
+```  
 sudo wget ftp://ftp.ensemblgenomes.org/pub/plants/release-47/fasta/oryza_sativa/dna/Oryza_sativa.IRGSP-1.0.dna.toplevel.fa.gz
-Step 2: Turn the rice genome sequence into a searchable blast database
-Unzip the downloaded file.
+```
+  
+
+**Step 2: Turn the rice genome sequence into a searchable blast database**
+  
+  
+Unzip the downloaded file:
+  
+  
+```
 gunzip Oryza_sativa.IRGSP-1.0.dna.toplevel.fa.gz
-Make it executable by changing the file permission
+```
+  
+  
+Make it executable by changing the file permission:
+  
+  
+```
 chmod +x Oryza_sativa.IRGSP-1.0.dna.toplevel.fa
-Make the database
+```
+  
+  
+Make the BLAST database:
+  
+  
+```
 makeblastdb -in Oryza_sativa.IRGSP-1.0.dna.toplevel.fa -out blastdb_rice -dbtype 'nucl' -hash_index
--in: input fasta file that will be turned into a blast database
+```
+  
+
+> -in: input fasta file that will be turned into a blast database
 -out: name of the newly generated database
 -dbtype: type of the database is nucleotide (‘nucl’)
 -hash_index: creates a hash table that is used to find sequence matches
