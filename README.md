@@ -272,20 +272,17 @@ blastn -query AtNRT1.1.fasta -task blastn -db blastdb_rice -outfmt 6 -out blast_
   
   
 
-Now, the blast output file has 12 columns. See the example below:
-  
-  
-```
-NM_101083.4	10	65.464	776	253	6	200	  963	  21762020	21761248	2.10e-42	178
-NM_101083.4	10	66.867	332	101	2	1508	1830	21758673	21758342	1.33e-19	102
-NM_101083.4	3	  72.581	248	68	0	200	  447	  202748		202995		1.51e-31	141
-NM_101083.4	3	  68.468	222	67	1	1540	1758	205145		205366		3.56e-14	84.2
-NM_101083.4	8	  74.634	205	52	0	248	  452	  3190204		3190000		6.43e-30	136
-NM_101083.4	8	  70.219	319	89	4	1511	1826	3183136		3182821		2.25e-29	134
-NM_101083.4	1	  73.016	189	51	0	248	  436	  21039220	21039408	2.56e-22	111
-NM_101083.4	1	  70.370	162	45	1	1166	1324	21040111	21040272	1.84e-11	75.2
-```
-  
+Now, the blastn output file has 12 columns (Fig. 3).
+
+
+<p align="center">
+  <img 
+    src="https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/blob/main/blast_hits.PNG"
+  >
+</p>
+<p align = "center">
+Figure 3. Blastn_hits.
+</p>
   
   
 The column headers are as follows:
@@ -348,7 +345,20 @@ sort -n -r -k 12 blast_hits.tsv > blast_hits_sorted.tsv
   
 > sort -k 12 means sorting on column 12
 
-  
+ 
+See the sorter version of the above blastn output file (Fig. 4).
+
+
+<p align="center">
+  <img 
+    src="https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/blob/main/blast_hits_sorted.PNG"
+  >
+</p>
+<p align = "center">
+Figure 4. Blastn hits sorted in descending order of the bitscores (Column 12).
+</p>
+
+ 
 ## **How do I extract the sequences of the blast hits in fasta format?** 
   
   
@@ -376,7 +386,18 @@ bedtools getfasta -fi Brara_Chiifu_V3.5.fa -bed blast_hits_sorted.bed –name > 
 ```
   
   
-This command line extracts the sequences for each blast hit in fasta format.
+This command line extracts the sequences for each blast hit in fasta format (Fig. 5).
+
+
+<p align="center">
+  <img 
+    src="https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/blob/main/blast_hits_seqs.PNG"
+  >
+</p>
+<p align = "center">
+Figure 5. Sequences extracted for each Blastn hits (fasta format).
+</p>
+
 
 <br />
   
