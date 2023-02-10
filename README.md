@@ -181,8 +181,9 @@ You can use the BLASTn tool. BLAST stands for Basic Local Alignment Search Tool.
   
   
 **Let’s run this task.**
-  
-  
+
+<br />
+
 **Step 1: Collect the sequences of the *AtNRT1.1* gene and rice genome from the NCBI database.**
   
   
