@@ -1,7 +1,7 @@
 # **A beginner's guide to Bioinformatics** <br />
 <br />
-
-### **Asad Prodhan PhD (https://asadprodhan.github.io/)**
+### **Asad Prodhan PhD
+https://asadprodhan.github.io/**
 <br />
 
 
