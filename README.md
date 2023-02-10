@@ -358,5 +358,6 @@ bedtools getfasta -fi Brara_Chiifu_V3.5.fa -bed blast_hits_sorted.bed –name > 
 This command line extracts the sequences for each blast hit in fasta format.
 
 
-** Congratulations! You've just completed your first analysis in Bioinformatics. You've also learned how to install and manage your next set of softwares for your next analysis**
+  
+**Congratulations! You've just completed your first analysis in Bioinformatics. You've also learned how to install and manage your next set of softwares for your next analysis**
   
