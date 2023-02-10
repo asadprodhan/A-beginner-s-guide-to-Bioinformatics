@@ -1,8 +1,8 @@
 # **A beginner's guide to Bioinformatics** <br />
+<br />
 
-
-## **By Asad Prodhan PhD (https://asadprodhan.github.io/)**
-
+### **Asad Prodhan PhD (https://asadprodhan.github.io/)**
+<br />
 
 
 Bioinformatics analysis starts with installing the relevant softwares in your computer unless you use ‘containers’. In this tutorial, we will learn how to install bioinformatics softwares using ‘conda’ and perform a basic bioinformatics analysis such as BLAST search.
