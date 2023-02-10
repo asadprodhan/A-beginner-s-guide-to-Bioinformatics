@@ -221,20 +221,46 @@ makeblastdb -in Oryza_sativa.IRGSP-1.0.dna.toplevel.fa -out blastdb_rice -dbtype
   
 
 > -in: input fasta file that will be turned into a blast database
--out: name of the newly generated database
--dbtype: type of the database is nucleotide (‘nucl’)
--hash_index: creates a hash table that is used to find sequence matches
-Ref: http://georg.iba-science.de/makeblastdb.html
+  
+  
+> -out: name of the newly generated database
+  
+  
+> -dbtype: type of the database is nucleotide (‘nucl’)
+  
+  
+> -hash_index: creates a hash table that is used to find sequence matches
+  
 
-Run the blastn
+Run the blastn command:
+  
+  
+```
 blastn -query AtNRT1.1.fasta -task blastn -db blastdb_rice -outfmt 6 -out blast_hits.tsv -evalue 1e-10 -num_threads 18 
--query: query sequence i.e., the sequence that you are using to find matches in rice
--task: blastn, searching nucleotide against a nucleotide database
--db: database that you made earlier
--outfmt 6: it will produce the output in a tabular format
--out: output file name
--evalue: one of the blast hits parameters. Is the blast hit a by-chance match to your query sequence? evalue 1e-10 means that the chance is 1 in 10,000,000,000. Therefore, the lower the evalue is, the better it is
--num_threads: number of computer threads to be used. 
+```
+  
+  
+> -query: query sequence i.e., the sequence that you are using to find matches in rice
+  
+  
+> -task: blastn, searching nucleotide against a nucleotide database
+  
+  
+> -db: database that you made earlier
+  
+  
+> -outfmt 6: it will produce the output in a tabular format
+  
+  
+> -out: output file name
+  
+  
+> -evalue: one of the blast hits parameters. Is the blast hit a by-chance match to your query sequence? evalue 1e-10 means that the chance is 1 in 10,000,000,000. Therefore, the lower the evalue is, the better it is
+  
+  
+> -num_threads: number of computer threads to be used.
+  
+  
 
 Now, the blast output file has 12 columns. The column headers are as follows:
 Column 1: qseqid, query sequence id. If you open you query file, you will find the id after ‘>’ sign
