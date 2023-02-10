@@ -63,13 +63,7 @@ Run *conda* in the terminal. If you already have conda, you will see instruction
 - this will install Anaconda3 in the home directory
 
 
-- add conda to your PATH
-
-
-### **What is PATH?**
-
-
-See https://github.com/asadprodhan/About-the-PATH 
+- add conda to your PATH (How to add? See the commands at https://github.com/asadprodhan/About-the-PATH) 
 
 
 
