@@ -349,6 +349,14 @@ sort -n -r -k 12 blast_hits.tsv > blast_hits_sorted.tsv
 See the sorter version of the above blastn output file (Fig. 4).
 
 
+<p align="center">
+  <img 
+    src="https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/blob/main/blast_hits_sorted.PNG"
+  >
+</p>
+<p align = "center">
+Figure 4. Blastn hits sorted in descending order of the bitscores (Column 12).
+</p>
 
  
 ## **How do I extract the sequences of the blast hits in fasta format?** 
