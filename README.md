@@ -349,7 +349,7 @@ sort -n -r -k 12 blast_hits.tsv > blast_hits_sorted.tsv
 
 <br />
   
-See the sorter version of the above blastn output file (Fig. 4).
+See the sorted version of the above blastn output file (Fig. 4).
 
 
 <p align="center">
