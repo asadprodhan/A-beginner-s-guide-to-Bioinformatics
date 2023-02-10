@@ -179,6 +179,7 @@ Say you have a DNA sequence. For example, *AtNRT1.1* (an *Arabidopsis* *thaliana
   
 You can use the BLASTn tool. BLAST stands for Basic Local Alignment Search Tool. It will find the closest match of *AtNRT1.1* gene in rice. Once the closest matches are identified, their sequences can be extracted from the rice genome.
   
+<br />
   
 **Let’s run this task.**
 
