@@ -10,7 +10,7 @@
 <br />
 
 
-Bioinformatics analysis starts with installing the relevant softwares in your computer unless you use ‘containers’. In this tutorial, we will learn how to install bioinformatics softwares using ‘conda’ and perform a basic bioinformatics analysis such as BLAST search.
+Bioinformatics analysis starts with installing the relevant softwares in your computer unless you use ‘containers’. In this tutorial, we will learn how to install bioinformatics softwares using ‘conda’ and perform a basic bioinformatics analysis such as BLAST search (Fig. 1).
 
 
 <p align="center">
@@ -182,7 +182,7 @@ You can use the BLASTn tool. BLAST stands for Basic Local Alignment Search Tool.
 **Step 1: Collect the sequences of the *AtNRT1.1* gene and rice genome from the NCBI database.**
   
   
-*AtNRT1.1* gene sequence in fasta format can be collected as follows:
+*AtNRT1.1* gene sequence in fasta format can be collected as follows (Fig. 2):
   
   
 <p align="center">
@@ -323,6 +323,7 @@ The column headers are as follows:
   
 > Column 12: bitscore, bit score
 
+<br />
   
 By default, you will get all 12 columns in your blast output file.
   
@@ -331,7 +332,8 @@ By default, you will get all 12 columns in your blast output file.
 
   
 The blast output file can be sorted in ascending or descending order using its column headers. For example, the following command will sort the blast hits in descending order using column 12 (the bitscore value). The higher the bitscore, the better it is.
-  
+
+<br />
   
 ```  
 sort -n -r -k 12 blast_hits.tsv > blast_hits_sorted.tsv  
@@ -345,7 +347,8 @@ sort -n -r -k 12 blast_hits.tsv > blast_hits_sorted.tsv
   
 > sort -k 12 means sorting on column 12
 
- 
+<br />
+  
 See the sorter version of the above blastn output file (Fig. 4).
 
 
@@ -358,7 +361,8 @@ See the sorter version of the above blastn output file (Fig. 4).
 Figure 4. Blastn hits sorted in descending order of the bitscores (Column 12).
 </p>
 
- 
+<br />
+  
 ## **How do I extract the sequences of the blast hits in fasta format?** 
   
   
@@ -388,7 +392,8 @@ bedtools getfasta -fi Brara_Chiifu_V3.5.fa -bed blast_hits_sorted.bed –name > 
   
 This command line extracts the sequences for each blast hit in fasta format (Fig. 5).
 
-
+<br />
+  
 <p align="center">
   <img 
     src="https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/blob/main/blast_hits_seqs.PNG"
