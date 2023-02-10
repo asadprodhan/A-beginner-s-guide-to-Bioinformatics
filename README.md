@@ -1,7 +1,7 @@
 # **A beginner's guide to Bioinformatics** <br />
 
 
-Bioinformatics analysis starts with installing the relevant softwares in your computer unless you use ‘containers’. In this tutorial, we will learn how to install bioinformatic softwares using ‘conda’ and perform a basic bioinformatic analysis such as BLAST search.
+Bioinformatics analysis starts with installing the relevant softwares in your computer unless you use ‘containers’. In this tutorial, we will learn how to install bioinformatics softwares using ‘conda’ and perform a basic bioinformatics analysis such as BLAST search.
 
 
 <p align="center">
@@ -16,7 +16,7 @@ Figure 1. How you start a bioinformatics analysis.
 
 ### **What is conda?**
 
-Simply put, Conda is a tool that quickly installs, updates, and manages softwares. During installation, it will also automatically install any other required softwares (called dependencies). Furthermore, it can create ‘environment’ called conda environment. Conda environment is a directory that compartmentalises the installed softwares, thus does not allow the installed softwares to interfere with any other softwares that are outside this environment.
+Simply put, Conda is a tool that quickly installs, updates, and manages softwares. During installation, it will also automatically install any other required softwares (called dependencies). Furthermore, it can create ‘environment’ called conda environment. Conda environment is a directory that compartmentalises the installed softwares, thus does not allow the installed softwares to interfere with any other softwares that are outside this environment and vice versa.
 
 
 ### **Do I have ‘conda’ in my computer?**
