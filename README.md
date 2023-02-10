@@ -27,6 +27,8 @@ Run *conda* in the terminal. If you already have conda, you will see instruction
 ### **How to install ‘conda’ in my computer?**
 
 - visit the anaconda archive to find the latest installer of Anaconda (https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh) 
+
+
 - download using 'wget' 
 
 
@@ -223,13 +225,13 @@ makeblastdb -in Oryza_sativa.IRGSP-1.0.dna.toplevel.fa -out blastdb_rice -dbtype
 ```
   
 
-> -in: input fasta file that will be turned into a blast database
+> -in: input fasta file that will be turned into a blast database  
   
   
 > -out: name of the newly generated database
   
   
-> -dbtype: type of the database is nucleotide (‘nucl’)
+> -dbtype: type of the database is nucleotide (‘nucl’) 
   
   
 > -hash_index: creates a hash table that is used to find sequence matches
@@ -243,13 +245,13 @@ blastn -query AtNRT1.1.fasta -task blastn -db blastdb_rice -outfmt 6 -out blast_
 ```
   
   
-> -query: query sequence i.e., the sequence that you are using to find matches in rice
+> -query: query sequence i.e., the sequence that you are using to find matches in rice 
   
   
-> -task: blastn, searching nucleotide against a nucleotide database
+> -task: blastn, searching nucleotide against a nucleotide database 
   
   
-> -db: database that you made earlier
+> -db: database that you made earlier 
   
   
 > -outfmt 6: it will produce the output in a tabular format
@@ -267,19 +269,41 @@ blastn -query AtNRT1.1.fasta -task blastn -db blastdb_rice -outfmt 6 -out blast_
 
 Now, the blast output file has 12 columns. The column headers are as follows:
   
->  
-Column 1: qseqid, query sequence id. If you open you query file, you will find the id after ‘>’ sign
-Column 2: sseqid, subject i.e., reference sequence id
-Column 3: pident, percentage of identical matches
-Column 4: length, alignment length 
-Column 5: mismatch, number of mismatches
-Column 6: gapopen, number of gap openings
-Column 7: qstart, start of alignment in query
-Column 8: qend, end of alignment in query
-Column 9: sstart, start of alignment in subject
-Column 10: send, end of alignment in subject
-Column 11: evalue, expect value
-Column 12: bitscore, bit score
+  
+> Column 1: qseqid, query sequence id. If you open you query file, you will find the id after ‘>’ sign
+  
+  
+> Column 2: sseqid, subject i.e., reference sequence id
+  
+  
+> Column 3: pident, percentage of identical matches
+  
+  
+> Column 4: length, alignment length 
+  
+  
+> Column 5: mismatch, number of mismatches
+  
+  
+> Column 6: gapopen, number of gap openings
+  
+  
+> Column 7: qstart, start of alignment in query
+  
+  
+> Column 8: qend, end of alignment in query
+  
+  
+> Column 9: sstart, start of alignment in subject
+  
+  
+> Column 10: send, end of alignment in subject
+  
+  
+> Column 11: evalue, expect value
+  
+  
+> Column 12: bitscore, bit score
 
   
 By default, you will get all 12 columns in your blast output file.
@@ -294,11 +318,14 @@ The blast output file can be sorted in ascending or descending order using its c
 ```  
 sort -n -r -k 12 blast_hits.tsv > blast_hits_sorted.tsv  
 ```
+   
+> sort -n means sorting numerically
   
-> 
-sort -n means sorting numerically
-sort -r means reverse order
-sort -k 12 means sorting on column 12
+  
+> sort -r means reverse order
+  
+  
+> sort -k 12 means sorting on column 12
 
   
 ## **How do I extract the sequences of the blast hits in fasta format?** 
