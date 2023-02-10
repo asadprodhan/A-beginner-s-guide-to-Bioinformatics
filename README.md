@@ -263,6 +263,8 @@ blastn -query AtNRT1.1.fasta -task blastn -db blastdb_rice -outfmt 6 -out blast_
   
 
 Now, the blast output file has 12 columns. The column headers are as follows:
+  
+>  
 Column 1: qseqid, query sequence id. If you open you query file, you will find the id after ‘>’ sign
 Column 2: sseqid, subject i.e., reference sequence id
 Column 3: pident, percentage of identical matches
@@ -276,22 +278,55 @@ Column 10: send, end of alignment in subject
 Column 11: evalue, expect value
 Column 12: bitscore, bit score
 
+  
 By default, you will get all 12 columns in your blast output file.
-You can customise it by replacing the ‘-outfmt 6’ flag by the following one. 
--outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore"
+  
+  
+> You can customise it by replacing the ‘-outfmt 6’ flag by the -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore"
 
-The blast output file can be sorted in ascending or descending order using its column headers. For example, the following command will sort the blast hits in descending order using column 12 (the bitscore value). Higher the bitscore value, better it is.
+  
+The blast output file can be sorted in ascending or descending order using its column headers. For example, the following command will sort the blast hits in descending order using column 12 (the bitscore value). The higher the bitscore, the better it is.
+  
+  
+```  
 sort -n -r -k 12 blast_hits.tsv > blast_hits_sorted.tsv  
+```
+  
+> 
 sort -n means sorting numerically
 sort -r means reverse order
 sort -k 12 means sorting on column 12
 
-How do I extract the sequences of the blast hits in fasta format?
-Run the following commands step-by-step.
+  
+## **How do I extract the sequences of the blast hits in fasta format?** 
+  
+  
+**Run the following commands step-by-step:**
+  
+  
+```
 awk '{print $2,$9,$10,"Rice_"$1"_"NR}' blast_hits_sorted.tsv > blast_hits.bed
+```
+  
+  
 This command line prints column 2, 9 and 10. It also assigns a name to each hit. Finally, saves the print out in ‘bed’ format, suitable for ‘bedtools’ 
+  
+  
+```  
 cat  blast_hits.bed | awk -v OFS='\t' '{ if ($2 < $3) {print $1,$2,$3,$4} else {print $1,$3,$2,$4} }' >  blast_hits_sorted.bed
+```
+  
+  
 This command line organises the chromosome positions from start to end
+  
+  
+```  
 bedtools getfasta -fi Brara_Chiifu_V3.5.fa -bed blast_hits_sorted.bed –name > blast_hits_seqs.fa
+```
+  
+  
 This command line extracts the sequences for each blast hit in fasta format.
 
+
+** Congratulations! You've just completed your first analysis in Bioinformatics. You've also learned how to install and manage your next set of softwares for your next analysis**
+  
