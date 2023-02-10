@@ -10,7 +10,7 @@ Bioinformatics analysis starts with installing the relevant softwares in your co
   >
 </p>
 <p align = "center">
-Figure 1. How you start a bioinformatics analysis.
+***Figure 1. How you start a bioinformatics analysis.***
 </p>
 
 
@@ -186,7 +186,7 @@ You can use the BLASTn tool. BLAST stands for Basic Local Alignment Search Tool.
   >
 </p>
 <p align = "center">
-Figure 2. Downloading *AtNRT1.1* gene sequence from the NCBI database.
+***Figure 2. Downloading *AtNRT1.1* gene sequence from the NCBI database.***
 </p>
 <br />
 
@@ -359,5 +359,5 @@ This command line extracts the sequences for each blast hit in fasta format.
 
 
   
-**Congratulations! You've just completed your first analysis in Bioinformatics. You've also learned how to install and manage your next set of softwares for your next analysis**
+**Congratulations! You've just completed your first analysis in Bioinformatics. You've also learned how to install and manage your next set of softwares for your next analysis.**
   
