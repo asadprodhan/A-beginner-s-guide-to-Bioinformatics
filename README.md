@@ -23,6 +23,41 @@ Figure 1. How you start a bioinformatics analysis.
 </p>
 
 
+## Table of Contents  
+[What is conda?](https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/edit/main/README.md#what-is-conda)  
+
+
+[Do I have ‘conda’ in my computer?](https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/edit/main/README.md#do-i-have-conda-in-my-computer)  
+
+
+[How to install ‘conda’ in my computer?](https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/edit/main/README.md#how-to-install-conda-in-my-computer)
+
+
+[How do I install softwares using ‘conda’?](https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/edit/main/README.md#how-do-i-install-softwares-using-conda)
+
+
+[How do I find the installation command for a bioinformatics software?](https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/edit/main/README.md#how-do-i-find-the-installation-command-for-a-bioinformatics-software)
+
+
+[Has my software installation been successful?](https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/edit/main/README.md#has-my-software-installation-been-successful)
+
+
+[How do I share my ‘conda environment’?](https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/edit/main/README.md#how-do-i-share-my-conda-environment)
+
+
+[How do I run a ‘conda environment’ that my colleague shared with me?](https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/edit/main/README.md#how-do-i-run-a-conda-environment-that-my-colleague-shared-with-me)
+
+
+[Let’s carry out a simple bioinformatics task](https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/edit/main/README.md#lets-carry-out-a-simple-bioinformatics-task)
+
+
+[How do I extract the sequences of the blast hits in fasta format?](https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/edit/main/README.md#how-do-i-extract-the-sequences-of-the-blast-hits-in-fasta-format)
+
+
+<a name="headers"/>
+
+<br />
+
 ### **What is conda?**
 
 Simply put, Conda is a tool that quickly installs, updates, and manages softwares. During installation, it will also automatically install any other required softwares (called dependencies). Furthermore, it can create ‘environment’ called conda environment. Conda environment is a directory that compartmentalises the installed softwares, thus does not allow the installed softwares to interfere with any other softwares that are outside this environment and vice versa.
