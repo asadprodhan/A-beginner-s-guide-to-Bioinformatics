@@ -1,16 +1,32 @@
-# **A beginner's guide to Bioinformatics** <br />
+<h1 align="center">A beginner's guide to Bioinformatics</h1>
 
+<h3 align="center">M. Asaduzzaman Prodhan<sup>*</sup> </h3>
 
-### **Asad Prodhan PhD** 
+<div align="center"><b> School of Biological Sciences, The University of Western Australia </b></div>
+<div align="center"><b> 35 Stirling Highway, Perth, WA 6009, Australia. <sup>*</sup>Correspondence: prodhan82@gmail.com </b></div>
 
+<br />
 
-*https://asadprodhan.github.io/*
+<p align="center">
+  <a href="https://github.com/asadprodhan/ABOUT_AUTHOREA/tree/main?tab=GPL-3.0-1-ov-file#readme"><img src="https://img.shields.io/badge/License-GPL%203.0-yellow.svg" alt="License GPL 3.0"></a>
+  <a href="https://orcid.org/0000-0002-1320-3486"><img src="https://img.shields.io/badge/ORCID-green?style=flat-square&logo=ORCID&logoColor=white" alt="ORCID"></a>
+</p>
 
 
 <br />
 
+## **Introduction**
 
-Bioinformatics analysis starts with installing the relevant softwares in your computer unless you use ‘containers’. In this tutorial, we will learn how to install bioinformatics softwares using ‘conda’ and perform a basic bioinformatics analysis such as BLAST search (Fig. 1).
+
+Welcome to bioinformatics! This hands-on guide introduces you to the world where biology meets computing — exploring DNA, proteins, and genomes using software tools.  
+
+By the end of this session, you will be able to:
+
+- Perform basic sequence searches  
+- Extract and organize biological data  
+- Share reproducible analyses  
+
+We will start by installing essential software with **Conda** and perform a simple BLAST search to get you started on analyzing real biological data (Fig. 1).
 
 
 <p align="center">
@@ -23,7 +39,7 @@ Figure 1. How you start a bioinformatics analysis.
 </p>
 
 
-## Table of Contents  
+## **Contents**  
 
 - [What is conda?](https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/edit/main/README.md#what-is-conda)  
 
