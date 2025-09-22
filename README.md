@@ -75,6 +75,7 @@ Figure 1. How you start a bioinformatics analysis.
 
 <br />
 
+
 ### **What is conda?**
 
 Simply put, Conda is a tool that quickly installs, updates, and manages softwares. During installation, it will also automatically install any other required softwares (called dependencies). Furthermore, it can create ‘environment’ called conda environment. Conda environment is a directory that compartmentalises the installed softwares, thus does not allow the installed softwares to interfere with any other softwares that are outside this environment and vice versa.
