@@ -8,7 +8,7 @@
 <br />
 
 <p align="center">
-  <a href="https://github.com/asadprodhan/ABOUT_AUTHOREA/tree/main?tab=GPL-3.0-1-ov-file#readme"><img src="https://img.shields.io/badge/License-GPL%203.0-yellow.svg" alt="License GPL 3.0"></a>
+  <a href="https://github.com/asadprodhan/A-beginner-s-guide-to-Bioinformatics/tree/main?tab=GPL-3.0-1-ov-file#readme"><img src="https://img.shields.io/badge/License-GPL%203.0-yellow.svg" alt="License GPL 3.0"></a>
   <a href="https://orcid.org/0000-0002-1320-3486"><img src="https://img.shields.io/badge/ORCID-green?style=flat-square&logo=ORCID&logoColor=white" alt="ORCID"></a>
 </p>
 
